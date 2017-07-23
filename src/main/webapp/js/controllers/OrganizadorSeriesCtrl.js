@@ -19,7 +19,7 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesCtrl", functi
 
   $scope.enviarPesquisa = function () {
     if($scope.input === undefined || $scope.input.length === 0) {
-      alert('Digite sua pesquisa: ');
+      alert('Digite algo para pesquisar.');
     } else {
       var promise = $http.get("https://omdbapi.com/?s=" + $scope.input + "&type=series&apikey=93330d3c").then(function (response) {
         if(response.data.Response === "False") {

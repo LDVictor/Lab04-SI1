@@ -19,8 +19,6 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Organizador de Séries</a>
-            <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://github.com/LDVictor/Lab03-SI1';">Meu
-                repositório do GitHub.com</a>
             <button class="btn-info" type="button" name="button" ng-show="logado == false" data-toggle="modal"
                     data-target="#fazerCadastro{{$index}}">Cadastrar
             </button>
@@ -32,6 +30,17 @@
             <button class="btn-danger" type="button" name="button" ng-show="logado == true" ng-click="realizarLogout()">
                 Sair da Conta
             </button>
+            <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://drive.google.com/open?id=19wS0sZPOyBEM3FFjnvU7stGOxNG4EGphuz_evBDGLTc';">Ajuda</a>
+            <ul class="nav navbar-nav" >
+                <li class="active"><a href="#inicio">Início</a></li>
+                <li><a href="#perfil">Minhas Séries</a></li>
+                <li><a href="#wlist">WatchList</a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
 
             <!-- Modal do Cadastro-->
             <div id="fazerCadastro{{$index}}" class="modal fade" role="dialog">
@@ -153,7 +162,7 @@
     </table>
 </nav>
 
-
+<div id=perfil>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -231,7 +240,9 @@
         </tr>
     </table>
 </nav>
+</div>
 
+<div id="wlist">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -260,9 +271,12 @@
         </table>
     </div>
 </nav>
+</div>
 
-<footer class="progress">
+<footer class="navbar-default">
     Copyright © 2017. Programa criado por Victor Emanuel Farias da Costa Borges.
+    <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://github.com/LDVictor/Lab04-SI1';">Meu
+        repositório do GitHub.com</a>
 </footer>
 </body>
 </html>
